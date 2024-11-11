@@ -1,0 +1,912 @@
+@import '../themes/styles/aura-wrapper.styles.css';
+@import '../themes/styles/aura-overlay.styles.css';
+@import '../themes/styles/aura-base.styles.css';
+@import '../themes/styles/aura-buttons.styles.css';
+@import '../themes/styles/aura-checkbox.styles.css';
+@import '../themes/styles/aura-dropdown.styles.css';
+@import '../themes/styles/aura-link.styles.css';
+@import '../themes/styles/aura-radio.styles.css';
+@import '../themes/styles/aura-input.styles.css';
+@import '../themes/styles/aura-content-expander.styles.css';
+@import '../themes/aura-delta.fonts.css';
+@import '../themes/aura-delta.theme.css';
+
+:root {
+  /* Units */
+  --aura-unit-0-px: 0;
+  --aura-unit-1-px: 1px;
+  --aura-unit-2-px: 2px;
+  --aura-unit-3-px: 3px;
+  --aura-unit-4-px: 4px;
+  --aura-unit-5-px: 5px;
+  --aura-unit-6-px: 6px;
+  --aura-unit-7-px: 7px;
+  --aura-unit-8-px: 8px;
+  --aura-unit-9-px: 9px;
+  --aura-unit-10-px: 10px;
+  --aura-unit-11-px: 11px;
+  --aura-unit-12-px: 12px;
+  --aura-unit-13-px: 13px;
+  --aura-unit-14-px: 14px;
+  --aura-unit-15-px: 15px;
+  --aura-unit-16-px: 16px;
+  --aura-unit-17-px: 17px;
+  --aura-unit-18-px: 18px;
+  --aura-unit-19-px: 19px;
+  --aura-unit-20-px: 20px;
+  --aura-unit-21-px: 21px;
+  --aura-unit-22-px: 22px;
+  --aura-unit-23-px: 23px;
+  --aura-unit-24-px: 24px;
+  --aura-unit-25-px: 25px;
+  --aura-unit-26-px: 26px;
+  --aura-unit-27-px: 27px;
+  --aura-unit-28-px: 28px;
+  --aura-unit-29-px: 29px;
+  --aura-unit-30-px: 30px;
+  --aura-unit-31-px: 31px;
+  --aura-unit-32-px: 32px;
+  --aura-unit-33-px: 33px;
+  --aura-unit-34-px: 34px;
+  --aura-unit-35-px: 35px;
+  --aura-unit-36-px: 36px;
+  --aura-unit-37-px: 37px;
+  --aura-unit-38-px: 38px;
+  --aura-unit-39-px: 39px;
+  --aura-unit-40-px: 40px;
+  --aura-unit-41-px: 41px;
+  --aura-unit-42-px: 42px;
+  --aura-unit-43-px: 43px;
+  --aura-unit-44-px: 44px;
+  --aura-unit-45-px: 45px;
+  --aura-unit-46-px: 46px;
+  --aura-unit-47-px: 47px;
+  --aura-unit-48-px: 48px;
+  --aura-unit-49-px: 49px;
+  --aura-unit-50-px: 50px;
+  --aura-unit-51-px: 51px;
+  --aura-unit-52-px: 52px;
+  --aura-unit-53-px: 53px;
+  --aura-unit-54-px: 54px;
+  --aura-unit-55-px: 55px;
+  --aura-unit-56-px: 56px;
+  --aura-unit-57-px: 57px;
+  --aura-unit-58-px: 58px;
+  --aura-unit-59-px: 59px;
+  --aura-unit-60-px: 60px;
+  --aura-unit-61-px: 61px;
+  --aura-unit-62-px: 62px;
+  --aura-unit-63-px: 63px;
+  --aura-unit-64-px: 64px;
+  --aura-unit-65-px: 65px;
+  --aura-unit-66-px: 66px;
+  --aura-unit-67-px: 67px;
+  --aura-unit-68-px: 68px;
+  --aura-unit-69-px: 69px;
+  --aura-unit-70-px: 70px;
+  --aura-unit-71-px: 71px;
+  --aura-unit-72-px: 72px;
+  --aura-unit-73-px: 73px;
+  --aura-unit-74-px: 74px;
+  --aura-unit-75-px: 75px;
+  --aura-unit-76-px: 76px;
+  --aura-unit-77-px: 77px;
+  --aura-unit-78-px: 78px;
+  --aura-unit-79-px: 79px;
+  --aura-unit-80-px: 80px;
+  --aura-unit-81-px: 81px;
+  --aura-unit-82-px: 82px;
+  --aura-unit-83-px: 83px;
+  --aura-unit-84-px: 84px;
+  --aura-unit-85-px: 85px;
+  --aura-unit-86-px: 86px;
+  --aura-unit-87-px: 87px;
+  --aura-unit-88-px: 88px;
+  --aura-unit-89-px: 89px;
+  --aura-unit-90-px: 90px;
+  --aura-unit-91-px: 91px;
+  --aura-unit-92-px: 92px;
+  --aura-unit-93-px: 93px;
+  --aura-unit-94-px: 94px;
+  --aura-unit-95-px: 95px;
+  --aura-unit-96-px: 96px;
+  --aura-unit-97-px: 97px;
+  --aura-unit-98-px: 98px;
+  --aura-unit-99-px: 99px;
+  --aura-unit-100-px: 100px;
+  --aura-unit-104-px: 104px;
+  --aura-unit-490-px: 490px;
+  --aura-unit-103-px: 103px;
+  --aura-unit-118-px: 118px;
+  --aura-unit-120-px: 120px;
+  --aura-unit-128-px: 128px;
+  --aura-unit-130-px: 8.125rem;
+  --aura-unit-145-px: 145px;
+  --aura-unit-150-px: 150px;
+  --aura-unit-165-px: 165px;
+  --aura-unit-170-px: 170px;
+  --aura-unit-185-px: 185px;
+  --aura-unit-200-px: 200px;
+  --aura-unit-210-px: 210px;
+  --aura-unit-230-px: 230px;
+  --aura-unit-275-px: 275px;
+  --aura-unit-300-px: 300px;
+  --aura-unit-314-px: 314px;
+  --aura-unit-315-px: 315px;
+  --aura-unit-324-px: 324px;
+  --aura-unit-339-px: 336px;
+  --aura-unit-570-px: 570px;
+  --aura-unit-650-px: 650px;
+  --aura-unit-668-px: 668px;
+  --aura-unit-678-px: 678px;
+  --aura-unit-768-px: 768px;
+
+  --aura-unit-0-point-24-rem: 0.24rem;
+
+  --aura-unit-1-percent: 1%;
+  --aura-unit-2-percent: 2%;
+  --aura-unit-3-percent: 3%;
+  --aura-unit-4-percent: 4%;
+  --aura-unit-5-percent: 5%;
+  --aura-unit-6-percent: 6%;
+  --aura-unit-7-percent: 7%;
+  --aura-unit-8-percent: 8%;
+  --aura-unit-9-percent: 9%;
+  --aura-unit-10-percent: 10%;
+  --aura-unit-12-percent: 12%;
+  --aura-unit-14-percent: 14%;
+  --aura-unit-15-percent: 15%;
+  --aura-unit-20-percent: 20%;
+  --aura-unit-23-percent: 23%;
+  --aura-unit-25-percent: 25%;
+  --aura-unit-29-percent: 29%;
+  --aura-unit-30-percent: 30%;
+  --aura-unit-31-percent: 31%;
+  --aura-unit-32-percent: 32%;
+  --aura-unit-33-percent: 33%;
+  --aura-unit-33-point-33-percent: 33.33%;
+  --aura-unit-34-percent: 34%;
+  --aura-unit-35-percent: 35%;
+  --aura-unit-36-percent: 36%;
+  --aura-unit-37-percent: 37%;
+  --aura-unit-38-percent: 38%;
+  --aura-unit-39-percent: 39%;
+  --aura-unit-40-percent: 40%;
+  --aura-unit-42-percent: 42%;
+  --aura-unit-43-percent: 43%;
+  --aura-unit-44-percent: 44%;
+  --aura-unit-45-percent: 45%;
+  --aura-unit-46-percent: 46%;
+  --aura-unit-48-percent: 48%;
+  --aura-unit-50-percent: 50%;
+  --aura-unit-51-percent: 51%;
+  --aura-unit-52-percent: 52%;
+  --aura-unit-53-percent: 53%;
+  --aura-unit-54-percent: 54%;
+  --aura-unit-55-percent: 55%;
+  --aura-unit-56-percent: 56%;
+  --aura-unit-57-percent: 57%;
+  --aura-unit-58-percent: 58%;
+  --aura-unit-59-percent: 59%;
+  --aura-unit-60-percent: 60%;
+  --aura-unit-61-percent: 61%;
+  --aura-unit-62-percent: 62%;
+  --aura-unit-63-percent: 63%;
+  --aura-unit-64-percent: 64%;
+  --aura-unit-65-percent: 65%;
+  --aura-unit-66-percent: 66%;
+  --aura-unit-67-percent: 67%;
+  --aura-unit-68-percent: 68%;
+  --aura-unit-70-percent: 70%;
+  --aura-unit-71-percent: 71%;
+  --aura-unit-72-percent: 72%;
+  --aura-unit-80-percent: 80%;
+  --aura-unit-82-percent: 82%;
+  --aura-unit-85-percent: 85%;
+  --aura-unit-90-percent: 90%;
+  --aura-unit-100-percent: 100%;
+
+  --aura-unit-negative-50-percent: -50%;
+  --aura-unit-negative-100-percent: -100%;
+  --aura-unit-negative-120-percent: -120%;
+
+  --aura-unit-325: 325;
+  --aura-unit-375: 375;
+
+  --aura-unit-minus-1-px: -1px;
+  --aura-unit-minus-2-px: -2px;
+  --aura-unit-minus-4-px: -4px;
+  --aura-unit-minus-5-px: -5px;
+  --aura-unit-minus-6-px: -6px;
+  --aura-unit-minus-10-px: -10px;
+  --aura-unit-minus-12-px: -12px;
+  --aura-unit-minus-15-px: -15px;
+  --aura-unit-minus-18-px: -18px;
+  --aura-unit-minus-25-px: -25px;
+
+  --aura-unit-point-one-rem: 0.1rem;
+  --aura-unit-point-25-rem: 0.25rem;
+  --aura-unit-point-3125-rem: 0.3125rem;
+  --aura-unit-point-5-rem: 0.5rem;
+  --aura-unit-point-9375-rem: 0.9375rem;
+  --aura-unit-1-point-25-rem: 1.25rem;
+  --aura-unit-1-point-5-rem: 1.5rem;
+  --aura-unit-1-point-5625-rem: 1.5625rem;
+  --aura-unit-15-point-6: 15.6px;
+
+  --aura-unit-1-em: 1em;
+  --aura-unit-1-point-4-em: 1.4em;
+  --aura-unit-1-point-8-em: 1.8em;
+  --aura-unit-1-point-9-em: 1.9em;
+
+  --aura-unit-90-deg: 90deg;
+
+  --aura-unit-100-percent: 100%;
+  --aura-unit-105-percent: 105%;
+
+  --aura-clip-50-percent: 50%;
+
+  --aura-15-ch: 15ch;
+
+  /* Display */
+  --aura-display-none: none;
+  --aura-display-flex: flex;
+  --aura-display-flex-auto: auto;
+  --aura-display-grid: grid;
+  --aura-display-inline-grid: inline-grid;
+  --aura-display-inline-flex: inline-flex;
+  --aura-display-block: block;
+  --aura-display-inline-block: inline-block;
+  --aura-overflow-hidden: hidden;
+  --aura-overflow-scroll: scroll;
+  --aura-overflow-visible: visible;
+  --aura-overflow-auto: auto;
+  --aura-white-space-nowrap: nowrap;
+  --aura-white-space-wrap: wrap;
+  --aura-white-space-word-wrap: word-wrap;
+  --aura-flex-wrap: wrap;
+  --aura-text-overflow-ellipsis: ellipsis;
+  --aura-clip-auto: auto;
+  --aura-clip-path-none: none;
+  --aura-offscreen: -9999px;
+
+  /* Flex-grow */
+  --aura-flex-grow-1: 1;
+
+  /* Flex direction */
+  --aura-flex-direction-row: row;
+  --aura-flex-direction-column: column;
+  --aura-flex-direction-reverse: row-reverse;
+  --aura-flex-direction-column-reverse: column-reverse;
+  --aura-flex-direction-unset: unset;
+  --aura-flex-direction-wrap: wrap;
+  --aura-flex-no-wrap: nowrap;
+
+  /* Justify */
+  --aura-justify-center: center;
+  --aura-justify-end: flex-end;
+  --aura-justify-start: flex-start;
+  --aura-justify-unset: unset;
+  --aura-justify-baseline: baseline;
+  --aura-justify-space-between: space-between;
+  --aura-justify-space-around: space-around;
+  --aura-justify-content-space-evenly: space-evenly;
+  --aura-justify-content-left: left;
+  --aura-justify-space-around: space-around;
+
+  /* align items */
+  --aura-align-center: center;
+  --aura-align-unset: unset;
+  --aura-align-baseline: baseline;
+  --aura-align-start: flex-start;
+  --aura-align-end: flex-end;
+  --aura-align-left: left;
+  --aura-align-stretch: stretch;
+
+  /* Position */
+  --aura-position-fixed: fixed;
+  --aura-position-relative: relative;
+  --aura-position-absolute: absolute;
+  --aura-position-inherit: inherit;
+  --aura-position-static: static;
+
+  /* Text Transform */
+  --aura-text-capitalize: capitalize;
+  --aura-text-uppercase: uppercase;
+  --aura-text-align-center: center;
+  --aura-text-align-start: start;
+  --aura-text-align-end: end;
+
+  /* transform */
+  --aura-transform-none: none;
+
+  /* Text Wrap */
+  --aura-text-wrap-balance: balance;
+  --aura-text-wrap-pretty: pretty;
+
+  /* Width */
+  --aura-width-fit-content: fit-content;
+  --aura-width-auto: auto;
+  --aura-width-inherit: inherit;
+  --aura-width-max-content: max-content;
+  --aura-width-100-percent: 100%;
+  --aura-width-05-rem: 0.5rem;
+  --aura-width-4-rem: 4rem;
+  --aura-width-7-point-5-rem: 7.5rem;
+  --aura-width-9-point-375: 9.375rem;
+  --aura-width-9-point-625-rem: 9.625rem;
+  --aura-width-10-rem: 10rem;
+  --aura-width-11-rem: 11rem;
+  --aura-width-95-rem: 95rem;
+  --aura-width-0-px: 0px;
+  --aura-width-14-px: 14px;
+  --aura-width-24-px: 24px;
+  --aura-width-40-px: 40px;
+  --aura-width-44-px: 44px;
+  --aura-width-48-px: 48px;
+  --aura-width-110-px: 110px;
+  --aura-width-120-px: 120px;
+  --aura-width-124-px: 124px;
+  --aura-width-240-px: 240px;
+  --aura-width-130-px: 130px;
+  --aura-width-140-px: 140px;
+  --aura-width-160-px: 160px;
+  --aura-width-190-px: 190px;
+  --aura-width-220-px: 220px;
+  --aura-width-250-px: 250px;
+  --aura-width-270-px: 270px;
+  --aura-width-280-px: 280px;
+  --aura-width-310-px: 310px;
+  --aura-width-340-px: 340px;
+  --aura-width-360-px: 360px;
+  --aura-width-370-px: 370px;
+  --aura-width-375-px: 375px;
+  --aura-width-392-px: 392px;
+  --aura-width-708-px: 708px;
+  --aura-width-860-px: 860px;
+  --aura-width-max-content: max-content;
+  --aura-width-min-content: min-content;
+
+  /* Widths vw values*/
+  --aura--width-100-vw: 100vw;
+
+  /* Height */
+  --aura-height-auto: auto;
+  --aura-height-inherit: inherit;
+  --aura-height-05: 0.5rem;
+  --aura-height-09: 0.563rem;
+  --aura-height-31: 1.9375rem;
+  --aura-height-50: 3.125rem;
+  --aura-height-55: 3.438rem;
+  --aura-height-64: 4rem;
+  --aura-height-70: 4.375rem;
+  --aura-height-72: 4.5rem;
+  --aura-height-82: 5.125rem;
+  --aura-height-85: 5.313rem;
+  --aura-height-220-px: 220px;
+  --aura-height-122: 7.625rem;
+  --aura-height-242: 15.125rem;
+  --aura-height-292: 18.25rem;
+  --aura-height-314: 19.625rem;
+  --aura-height-324: 20.25rem;
+  --aura-height-2830: 177rem;
+
+  /* Heights px values*/
+  --aura-height-0-px: 0px;
+  --aura-height-210-px: 210px;
+  --aura-height-579-px: 579px;
+
+  /* Heights vh values*/
+  --aura-height-200-vh: 200vh;
+  --aura-height-100-vh: 100vh;
+  --aura-height-70-vh: 70vh;
+  --aura-height-75-vh: 75vh;
+
+  /* Heights % values*/
+  --aura-height-percent-25: 25%;
+  --aura-height-percent-30: 30%;
+  --aura-height-percent-50: 50%;
+  --aura-height-percent-60: 60%;
+  --aura-height-percent-70: 70%;
+  --aura-height-percent-80: 80%;
+  --aura-height-percent-90: 90%;
+  --aura-height-percent-94: 94%;
+  --aura-height-percent-95: 95%;
+  --aura-height-percent-99: 95%;
+  --aura-height-percent-100: 100%;
+
+  --aura-height-unset: unset;
+
+  /* Font Weight */
+  --aura-font-weight-bold: bold;
+  --aura-font-weight-100: 100;
+  --aura-font-weight-300: 300;
+  --aura-font-weight-325: 325;
+  --aura-font-weight-375: 375;
+
+  /* Rotate */
+  --aura-rotate-90deg: rotate(90deg);
+  --aura-rotate-225deg: rotate(225deg);
+  --aura-rotate-270deg: rotate(270deg);
+  --aura-rotate-135deg: rotate(135deg);
+  --aura-rotate-180deg: rotate(180deg);
+
+  --aura-fill-none: none;
+  --aura-stroke-width-one-point-two: 1.2;
+  --aura-stroke-linecap-round: round;
+  --aura-stroke-dasharray-progress: 0 100;
+  --aura-earnometer-animation: 3s ease-out forwards;
+  --aura-svg-text-anchor: middle;
+  --aura-border-type-none: none;
+  --aura-border-type-solid: solid;
+  --aura-border-type-dotted: dotted;
+  --aura-border-type-dashed: dashed;
+  --aura-border-type-double: double;
+  --aura-border-style-hidden: hidden;
+  /* opacity */
+  --aura-opacity-0: 0;
+  --aura-opacity-point-four: 0.4;
+  --aura-opacity-0-4: 0.4;
+  --aura-opacity-half: 0.5;
+  --aura-opacity-zero: 0;
+  --aura-opacity-0-9: 0.9;
+  --aura-opacity-one: 1;
+  --aura-z-index-minus-1: -1;
+  --aura-cursor-pointer: pointer;
+  --aura-cursor-none: none;
+  --aura-pointer-event-auto: auto;
+  --aura-pointer-event-none: none;
+  --aura-pointer-not-allowed: not-allowed;
+  --aura-transition-delay-point-five: 0.5s;
+  --aura-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  --aura-dropdown-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  --aura-seat-focus-border: 0 0 0 0.125rem #6c718a;
+  --aura-accordion-box-shadow: 0px 2px 2px 0px rgba(7, 11, 36, 0.1);
+  --aura-box-shadow-none: none;
+  --aura-box-shadow-inset: inset;
+
+  /* Letter Spacing */
+  --aura-letter-spacing-1px: 0.063rem;
+  --aura-letter-spacing-1-point-3-px: 1.3px;
+  --aura-letter-spacing-1-point-4-px: 1.4px;
+  --aura-letter-spacing-point-5-px: 0.5px;
+  --aura-letter-spacing-point-3-px: 0.3px;
+  --aura-letter-spacing-point-1-6px: 0.16px;
+  --aura-letter-spacing-point-6-px: 0.038rem;
+
+  /* user select */
+  --aura-user-select-none: none;
+  --aura-user-select-all: all;
+  --aura-user-select-auto: auto;
+
+  /* Float */
+  --aura-float-right: right;
+  --aura-float-left: left;
+
+  /* Transition */
+  --aura-transition-all: all;
+  --aura-transition-ease: ease;
+  --aura-transition-ease-in: ease-in;
+  --aura-transition-ease-out: ease-out;
+  --aura-transition-ease-in-out: ease-in-out;
+  --aura-transition-time-point-three: 0.3s;
+  --aura-transition-time-point-four: 0.4s;
+  --aura-transition-time-point-five: 0.5s;
+  --aura-transition-time-point-six: 0.6s;
+  --aura-transition-time-point-seven: 0.7s;
+  --aura-transition-time-point-eight: 0.8s;
+  --aura-transition-time-one: 1s;
+  --aura-transition-time-three: 3s;
+  --aura-transition-time-one-point-five: 1.5s;
+
+  /* z-index */
+  --aura-z-index-0: 0;
+  --aura-z-index-1: 1;
+  --aura-z-index-20: 20;
+
+  /* Content */
+  --aura-content-colon: ':';
+
+  /* RGBA Units */
+  --aura-unit-decimal-15: 0.15;
+  --aura-unit-64: 64;
+
+  /* Vertical align */
+  --aura-vertical-align-text-bottom: text-bottom;
+
+  /* Migrated Variables*/
+  --aura-letter-spacing-0-6px: 0.0375rem;
+  --aura-letter-spacing-1-8px: 1.8px;
+  --aura-line-height-13: 0.8125rem;
+  --aura-line-height-14: 0.875rem;
+  --aura-line-height-15: 0.9375rem;
+  --aura-line-height-15-half: 0.975rem;
+  --aura-line-height-15-6px: 15.6px;
+  --aura-line-height-16: 1rem;
+  --aura-line-height-18: 1.125rem;
+  --aura-line-height-21: 1.35rem;
+  --aura-line-height-22: 1.375rem;
+  --aura-line-height-27: 1.6875rem;
+  --aura-line-height-30: 1.875rem;
+  --aura-line-height-34: 2.125rem;
+  --aura-line-height-normal: normal;
+  --aura-white-space-normal: normal;
+  --aura-padding-0: 0;
+  --aura-padding-3: 0.1875rem;
+  --aura-padding-6: 0.375rem;
+  --aura-padding-8: 0.5rem;
+  --aura-padding-10: 0.625rem;
+  --aura-padding-12: 0.75rem;
+  --aura-padding-15: 0.9375rem;
+  --aura-padding-20: 1.25rem;
+  --aura-padding-25: 1.563rem;
+  --aura-padding-30: 1.875rem;
+  --aura-padding-bottom-5: 0.313rem;
+  --aura-padding-1-point-44-px: 0.09rem;
+  --aura-padding-1-point-44-px: 0.09rem;
+  --aura-link-cursor: pointer;
+  --aura-border-0: 0;
+  --aura-border-1px: 0.063rem;
+  --aura-border-2px: 0.125rem;
+  --aura-border-radius-none: 0;
+  --aura-border-radius-50-perc: 50%;
+  --aura-border-style-solid: solid;
+  --aura-border-width-3: 0.1875rem;
+  --aura-border-color-gray: #cfcfd0;
+  --aura-btn-icon-hover-shadow: 0 0 0 0.125rem #acb4cc;
+  --aura-margin-0: 0;
+  --aura-margin-4: 0.25rem;
+  --aura-margin-10: 0.625rem;
+  --aura-margin-11: 0.688rem;
+  --aura-margin-20: 1.25rem;
+  --aura-margin-top-10: 0.625rem;
+  --aura-margin-top-20: 1.25rem;
+  --aura-margin-top-25: 1.5625rem;
+  --aura-margin-top-47: 2.938rem;
+  --aura-margin-bottom-10: 0.625rem;
+  --aura-margin-left-auto: auto;
+  --aura-margin-left-3: 3rem;
+  --aura-margin-top-auto: auto;
+  --aura-margin-bottom-auto: auto;
+  --aura-margin-left-minus-zero-12: -0.12rem;
+  --aura-margin-left-2-point-4: 2.4rem;
+  --aura-margin-left-21: 21rem;
+  --aura-margin-left-16: 16rem;
+  --aura-margin-left-2: 2rem;
+  --aura-margin-left-3: 3rem;
+  --aura-margin-left-14px: 0.875rem;
+  --aura-margin-right-auto: auto;
+  --aura-margin-right-5: 0.313rem;
+  --aura-margin-right-6: 0.6rem;
+  --aura-margin-right-2: 0.2rem;
+  --aura-width-1180: 73.75rem;
+  --aura-width-41-perc: 41%;
+  --aura-width-59-perc: 59%;
+
+  --aura-width-1156: 72.25rem;
+
+  --aura-max-width-976px: 61rem;
+  --aura-max-width-730px: 45.625rem;
+  --aura-max-width-1140px: 71.25rem;
+  --aura-max-width-100-perc: 100%;
+  --aura-background-color-unset: unset;
+  --aura-outline-none: none;
+  --aura-outline-style-auto: auto;
+  --aura-text-decoration-none: none;
+  --aura-align-self-start: flex-start;
+  --aura-align-self-end: flex-end;
+  --aura-align-self-center: center;
+  --aura-justify-self-end: flex-end;
+  --aura-justify-self-start: flex-start;
+  --aura-justify-self-center: center;
+
+  --aura-grid-row-one-by-two: 1/2;
+  --aura-grid-column-one-by-minus-three: 1/-3;
+  --aura-grid-column-minus-one-by-two: -1/2;
+  --aura-grid-column-two-by-three: 2/3;
+  --aura-grid-template-columns-unset: unset;
+  --aura-grid-template-columns-none: none;
+  --aura-grid-template-rows-none: none;
+  --aura-grid-template-rows-unset: unset;
+  --aura-grid-row-two-by-three: 2/3;
+  --aura-grid-column-one-by-three: 1/3;
+  --aura-grid-column-one-by-four: 1/4;
+  --aura-fraction-0: 0fr;
+  --aura-fraction-1: 1fr;
+  --aura-fraction-2: 2fr;
+  --aura-fraction-3: 3fr;
+  --aura-fraction-4: 4fr;
+  --aura-fraction-5: 5fr;
+  --aura-fraction-6: 6fr;
+  --aura-justify-content-center: center;
+  --aura-align-items-center: center;
+  --aura-align-items-stretch: stretch;
+
+  --aura-text-decoration-underline: underline;
+  --aura-link-arrow-caret: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/medallion-arrow.svg') no-repeat
+    transparent;
+  --aura-caret: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/red-down-arrow.svg');
+  --aura-disabled-caret: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/disabled-down-arrow.svg');
+  --aura-separator: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/separator.svg');
+  --aura-disabled-caret: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/disabled-down-arrow.svg');
+  --aura-white-separator: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/separator-white.svg');
+  --aura-large-line: url('/content/dam/delta-applications/aura/1.15.9/images/lines/large-line.svg');
+  --aura-medium-line: url('/content/dam/delta-applications/aura/1.15.9/images/lines/medium-line.svg');
+  --aura-small-line: url('/content/dam/delta-applications/aura/1.15.9/images/lines/small-line.svg');
+  --aura-red-eye: url('/content/dam/delta-applications/aura/1.15.9/images/icons/red-eye.svg');
+  --aura-checkmark: url('/content/dam/delta-applications/aura/1.15.9/images/icons/checkmark-blue.svg');
+  --aura-checkmark-disabled: url('/content/dam/delta-applications/aura/1.15.9/images/icons/checkmark-gray.svg');
+  --aura-blue-arrow: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/solid-light-blue-down-arrow.svg');
+  --aura-blue-circle-check: url('/content/dam/delta-applications/aura/1.15.9/images/icons/blue-circle-check-mark.svg');
+  --aura-information-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/information-icon.svg');
+  --aura-info-icon-secondary: url('/content/dam/delta-applications/aura/1.15.9/images/icons/info-icon-secondary.svg');
+  --aura-search-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/search-icon.svg');
+  --aura-letter-spacing-0-747px: 0.046667rem;
+  --aura-line-height-18: 1.125rem;
+  --aura-line-height-20: 1.31rem;
+  --aura-line-height-40: 2.5rem;
+
+  --aura-padding-left-15: 0.94rem;
+  --aura-padding-left-30: 1.88rem;
+  --aura-delta-super-graphic-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/delta-super-graphic-icon.svg');
+  --aura-previous-button-arrow: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/previous-arrow.svg');
+  --aura-next-button-arrow: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/next-arrow.svg');
+  --aura-calendar-blue-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/calendar-blue-icon.svg');
+  --aura-filter-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/filter-icon.svg');
+  --aura-modal-gray-close-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/close-gray-icon.svg');
+  --aura-modal-white-close-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/close-white-icon.svg');
+  --aura-modal-solid-close-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/close-solid-icon.svg');
+  --aura-modal-blue-close-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/close-blue-icon.svg');
+  --aura-info-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/info-icon.svg');
+  --aura-blue-left-arrow: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/blue-left-arrow.svg');
+  --aura-blue-right-arrow: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/blue-right-arrow.svg');
+  --aura-blue-down-arrow: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/blue-down-arrow.svg');
+  --aura-solid-blue-arrow: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/expand-down-caret.svg');
+  --aura-error-arrow: url('/content/dam/delta-applications/aura/1.15.9/images/icons/error-right-arrow.svg');
+  --aura-plus-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/plus-icon.svg');
+  --aura-minus-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/minus-icon.svg');
+  --aura-red-down-arrow: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/red-down-arrow.svg');
+  --aura-red-up-arrow: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/red-up-arrow.svg');
+  --aura-list-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/list.svg');
+  --aura-margin-40: 2.5rem;
+  --aura-margin-top-43: 2.69rem;
+  --aura-margin-bottom-5: 0.31rem;
+  --aura-margin-minus-15: -0.9375rem;
+  --aura-margin-left-10: 0.625rem;
+  --aura-margin-left-30: 1.88rem;
+  --aura-margin-right-10: 1rem;
+  --aura-margin-right-30: 1.875rem;
+  --aura-width-60-perc: 60%;
+
+  --aura-width-84: 5.25rem;
+  --aura-width-85: 5.31rem;
+  --aura-width-15: 0.9375rem;
+  --aura-height-15: 0.9375rem;
+
+  --aura-top-5: 0.313rem;
+  --aura-top-10: 0.625rem;
+  --aura-background-none: none;
+  --aura-background-size-contain: contain;
+  --aura-background-size-cover: cover;
+  --aura-background-center: center;
+  --aura-background-align-center: align-center;
+  --aura-background-position-container-logo: right 24px top;
+  --aura-background-size-container-logo: 72px 63px;
+  --aura-border-box: border-box;
+
+  --aura-text-align-right: right;
+  --aura-text-transform-uppercase: uppercase;
+  --aura-filter-desktop-background-repeat: no-repeat;
+  --aura-justify-content-space-between: space-between;
+  --aura-justify-content-normal: normal;
+
+  --aura-none: none;
+  --aura-default: default;
+  --aura-unset: unset;
+
+  --aura-padding-5: 0.3125rem;
+  --aura-font-weight-350: 350;
+  --aura-font-weight-400: 400;
+  --aura-alert-link-font-weight: 600;
+  --aura-background-transparent: transparent;
+
+  --aura-body-bg: var(--aura-white);
+  --aura-visibility-hidden: hidden;
+  --aura-line-height-17: 1.0625rem;
+  --aura-padding-9: 9px;
+  --aura-padding-25: 1.5625rem;
+  --aura-padding-11: 0.688rem;
+  --aura-padding-2: 0.125rem;
+  --aura-border-none: none;
+  --aura-border-gray1-1px: 0.0625rem solid var(--aura-border-color-gray);
+  --aura-border-grey2-1px: 0.0625rem solid var(--aura-fieldset-disabled-border);
+  --aura-margin-top-minus-25: -1.5625rem;
+  --aura-margin-2: 0.125rem;
+  --aura-margin-top-30: 1.875rem;
+  --aura-margin-2-percent: 2%;
+  --aura-margin-5-percent: 5%;
+  --aura-margin-10-percent: 10%;
+  --aura-width-126: 7.875rem;
+  --aura-width-25: 1.563rem;
+  --aura-width-40: 2.5rem;
+  --aura-width-67-perc: 66.6667%;
+  --aura-width-75-perc: 75%;
+  --aura-width-100-perc: 100%;
+  --aura-width-75: 4.688rem;
+  --aura-width-70: 4.375rem;
+  --aura-width-134: 8.375rem;
+  --aura-width-120: 7.5rem;
+  --aura-width-267: 16.688rem;
+  --aura-width-70-percent: 70%;
+  --aura-height-10: 0.625rem;
+  --aura-height-20: 1.25rem;
+  --aura-height-30: 1.875rem;
+  --aura-height-39: 2.438rem;
+  --aura-height-40: 40px;
+  --aura-height-60: 3.75rem;
+  --aura-top-2-minus: -2rem;
+  --aura-top-22px-minus: -1.375rem;
+  --aura-top-30px-minus: -1.875rem;
+  --aura-top-0: 0rem;
+  --aura-top-13: 0.8125rem;
+  --aura-top-21: 1.313rem;
+  --aura-left-0: 0;
+  --aura-left-85-perc: 85%;
+  --aura-right-60px: 3.75rem;
+  --aura-flex-none: none;
+  --aura-flex-end: flex-end;
+  --aura-order-1: 1;
+  --aura-order-negative-1: -1;
+  --aura-order-negative-2: -2;
+  --aura-flex-text-wrap: wrap;
+  --aura-grid-template-columns-4fr: 1fr 1fr 1fr 1fr;
+  --aura-grid-template-columns-1fr: 1fr;
+  --aura-grid-template-columns-1fr-1fr: 1fr 1fr;
+  --aura-grid-template-columns-auto: auto auto;
+  --aura-grid-template-columns-repeat: repeat(3, 33.3%);
+  --aura-grid-template-columns-calendar-repeat: repeat(7, 1fr);
+  --aura-grid-template-columns-35perc-65perc: 35% 65%;
+  --aura-flex-grow-0: 0;
+  --aura-flex-shrink-0: 0;
+
+  --aura-alert-img: url('/content/dam/delta-applications/aura/1.15.9/images/icons/alert-icon.svg');
+  --aura-line-height-24: 1.5rem;
+  --aura-line-height-36: 2.25rem;
+  --aura-padding-33: 2.0625rem;
+  --aura-padding-38: 2.4375rem;
+  --aura-padding-40: 2.5rem;
+  --aura-box-shadow-error-alert-warning: 0 0 var(--aura-font-size-4px)
+    rgba(0, 0, 0, 0.3);
+  --aura-no-repeat: no-repeat;
+  --aura-item-bg-color: transparent;
+  --aura-margin-auto: auto;
+  --aura-margin-30: 1.875rem;
+  --aura-margin-minus-3: -0.1875rem;
+  --aura-width-386: 24.125rem;
+  --aura-width-20: 1.25rem;
+  --aura-width-8: 0.5rem;
+  --aura-right-30px: 1.875rem;
+  --aura-seatkey-link: #4470c2;
+  --aura-text-color: #0b1f66;
+  --aura-white-text-color: var(--aura-white);
+  --aura-expansion-animation-bg: #fff;
+  --aura-expansion-animation-color: #0b1f66;
+  /* Skeleton loader */
+  --aura-skeleton-loader-webkit-mask: linear-gradient(
+      -60deg,
+      #000 30%,
+      #0005,
+      #000 70%
+    )
+    right/300% 100%;
+  --aura-shimmer-animation: 2s linear infinite;
+  --aura-background-no-repeat: no-repeat;
+  --aura-position-left: left;
+  --aura-height-100: 6.25rem;
+  --aura-width-80-perc: 80%;
+  --aura-width-70-perc: 70%;
+  --aura-width-50-perc: 50%;
+  --aura-width-30-perc: 30%;
+  --aura-width-25-perc: 25%;
+  --aura-width-20-perc: 20%;
+  --aura-width-55: 55px;
+
+  /* Tooltip */
+  --aura-tooltip-filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.4));
+  --aura-content-expander-filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.4));
+
+  /* Medallion banner logo variations */
+  --aura-medallion-banner-0: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-branding.svg');
+  --aura-medallion-banner-1: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-1.svg');
+  --aura-medallion-banner-2: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-2.svg');
+  --aura-medallion-banner-3: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-3.svg');
+  --aura-medallion-banner-4: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-4.svg');
+  --aura-medallion-banner-5: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-5.svg');
+  --aura-medallion-banner-6: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-6.svg');
+  --aura-medallion-banner-7: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-7.svg');
+  --aura-medallion-banner-8: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-8.svg');
+  --aura-medallion-banner-9: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-9.svg');
+  --aura-medallion-banner-10: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-10.svg');
+  --aura-medallion-banner-11: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-11.svg');
+  --aura-medallion-banner-12: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-12.svg');
+  --aura-medallion-banner-13: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-13.svg');
+  --aura-medallion-banner-14: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-14.svg');
+  --aura-medallion-banner-15: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-15.svg');
+  --aura-medallion-banner-16: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-16.svg');
+  --aura-medallion-banner-17: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-17.svg');
+  --aura-medallion-banner-18: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-18.svg');
+  --aura-medallion-banner-19: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-19.svg');
+  --aura-medallion-banner-20: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/delta-million-miller-20.svg');
+  --aura-medallion-banner-360-0: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-logo.svg');
+  --aura-medallion-banner-360-1: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-1million.svg');
+  --aura-medallion-banner-360-2: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-2million.svg');
+  --aura-medallion-banner-360-3: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-3million.svg');
+  --aura-medallion-banner-360-4: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-4million.svg');
+  --aura-medallion-banner-360-5: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-5million.svg');
+  --aura-medallion-banner-360-6: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-6million.svg');
+  --aura-medallion-banner-360-7: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-7million.svg');
+  --aura-medallion-banner-360-8: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-8million.svg');
+  --aura-medallion-banner-360-9: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-9million.svg');
+  --aura-medallion-banner-360-10: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-10million.svg');
+  --aura-medallion-banner-360-11: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-11million.svg');
+  --aura-medallion-banner-360-12: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-12million.svg');
+  --aura-medallion-banner-360-13: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-13million.svg');
+  --aura-medallion-banner-360-14: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-14million.svg');
+  --aura-medallion-banner-360-15: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-15million.svg');
+  --aura-medallion-banner-360-16: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-16million.svg');
+  --aura-medallion-banner-360-17: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-17million.svg');
+  --aura-medallion-banner-360-18: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-18million.svg');
+  --aura-medallion-banner-360-19: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-19million.svg');
+  --aura-medallion-banner-360-20: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/logos/360-20million.svg');
+
+  /* Tracker million miler logos */
+  --aura-tracker-million-miler-0: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-0.svg');
+  --aura-tracker-million-miler-1: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-1.svg');
+  --aura-tracker-million-miler-2: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-2.svg');
+  --aura-tracker-million-miler-3: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-3.svg');
+  --aura-tracker-million-miler-4: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-4.svg');
+  --aura-tracker-million-miler-5: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-5.svg');
+  --aura-tracker-million-miler-6: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-6.svg');
+  --aura-tracker-million-miler-7: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-7.svg');
+  --aura-tracker-million-miler-8: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-8.svg');
+  --aura-tracker-million-miler-9: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-9.svg');
+  --aura-tracker-million-miler-10: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-10.svg');
+  --aura-tracker-million-miler-11: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-11.svg');
+  --aura-tracker-million-miler-12: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-12.svg');
+  --aura-tracker-million-miler-13: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-13.svg');
+  --aura-tracker-million-miler-14: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-14.svg');
+  --aura-tracker-million-miler-15: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-15.svg');
+  --aura-tracker-million-miler-16: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-16.svg');
+  --aura-tracker-million-miler-17: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-17.svg');
+  --aura-tracker-million-miler-18: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-18.svg');
+  --aura-tracker-million-miler-19: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-19.svg');
+  --aura-tracker-million-miler-20: url('/content/dam/delta-applications/aura/1.15.9/images/skymiles/million-miler/tracker-million-miler-20.svg');
+
+  /* RTTV Assets */
+  --aura-check-mark: url('/content/dam/delta-applications/aura/1.15.9/images/trips/flight-journey-icons/check-mark.svg');
+  --aura-delayed-flight-alert: url('/content/dam/delta-applications/aura/1.15.9/images/trips/flight-journey-icons/delayed-flight-alert.svg');
+  --aura-missed-flight-alert: url('/content/dam/delta-applications/aura/1.15.9/images/trips/flight-journey-icons/missed-flight-alert.svg');
+  --aura-priority-boarding: url('/content/dam/delta-applications/aura/1.15.9/images/trips/flight-journey-icons/priority-boarding.svg');
+  --aura-square-box-primary: url('/content/dam/delta-applications/aura/1.15.9/images/trips/flight-journey-icons/square-box-primary.svg');
+  --aura-rectangle-box-primary: url('/content/dam/delta-applications/aura/1.15.9/images/trips/flight-journey-icons/rectangle-primary.svg');
+  --aura-rectangle-box-secondary: url('/content/dam/delta-applications/aura/1.15.9/images/trips/flight-journey-icons/rectangle-secondary.svg');
+  --aura-square-box-secondary: url('/content/dam/delta-applications/aura/1.15.9/images/trips/flight-journey-icons/square-box-secondary.svg');
+  --aura-priority-boarding: url('/content/dam/delta-applications/aura/1.15.9/images/trips/flight-journey-icons/priority-boarding.svg');
+  --aura-baggage-primary: url('/content/dam/delta-applications/aura/1.15.9/images/trips/baggage-icons/baggage-primary.svg');
+  --aura-baggage-secondary: url('/content/dam/delta-applications/aura/1.15.9/images/trips/baggage-icons/baggage-secondary.svg');
+  --aura-transfer-baggage-primary: url('/content/dam/delta-applications/aura/1.15.9/images/trips/baggage-icons/transfer-baggage-primary.svg');
+  --aura-transfer-baggage-secondary: url('/content/dam/delta-applications/aura/1.15.9/images/trips/baggage-icons/transfer-baggage-secondary.svg');
+  --aura-flight-primary: url('/content/dam/delta-applications/aura/1.15.9/images/trips/flight-journey-icons/flight-primary.svg');
+  --aura-flight-secondary: url('/content/dam/delta-applications/aura/1.15.9/images/trips/flight-journey-icons/flight-secondary.svg');
+
+  --aura-step-1: url('/content/dam/delta-applications/aura/1.15.9/images/steps/num-1.svg');
+  --aura-step-2: url('/content/dam/delta-applications/aura/1.15.9/images/steps/num-2.svg');
+  --aura-input-error-alert: url('/content/dam/delta-applications/aura/1.15.9/images/icons/input-error-red-arrow.svg');
+  --aura-flight-one-way-arrow: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/flight-one-way-arrow.svg');
+  --aura-breadcrumb-separator: url('/content/dam/delta-applications/aura/1.15.9/images/icons/breadcrumb-separator-icon.svg');
+  --aura-breadcrumb-ellipse: url('/content/dam/delta-applications/aura/1.15.9/images/icons/breadcrumb-ellipsis.svg');
+  --aura-route-switcher-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/route-switcher-icon.svg');
+  --aura-operations-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/operations.svg');
+  --aura-alert-blue-icon: url('/content/dam/delta-applications/aura/1.15.9/images/icons/alert-icon-blue.svg');
+  --aura-solid-blue-down-arrow: url('/content/dam/delta-applications/aura/1.15.9/images/arrows/solid-blue-down-arrow.svg');
+}

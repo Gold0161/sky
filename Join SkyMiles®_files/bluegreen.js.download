@@ -1,0 +1,92 @@
+$(window).on('load', function () {
+  setTimeout(function () {
+
+    $('body > idp-root').each(function () {
+      $(this).each(function () {
+        if (this.attributes.length == 0) {
+          location.reload();
+        }
+      });
+    });
+  }, 4000);
+});
+
+$(document).ready(function () {
+  const requri = 'https://personalization-api.delta.com/personalization-api/getPersonalizedContent';
+  const configrequri =
+    '/content/dam/delta-applications/enrollment/config/config.json';
+  $.getJSON(configrequri, function (configJson) {
+    if (configJson['bluegreen-enabled']) {
+      requestPersonalizationJSON(requri, function (json) {
+        determineVersionToLoad(json);
+      });
+    } else {
+      console.log('Loaded Default version');
+      loadScripts(configJson, 'default');
+    }
+  });
+
+  /**
+   *
+   * @param {*} json
+   * @param {*} version
+   */
+  function loadScripts(json, version) {
+    console.log('Currelty loaded scripts version :' + json[version]);
+    $.getScript('/joinskymiles/' + json[version] + '/runtime.js', function () {
+      // do something here
+    }).fail(function (jqxhr, settings, exception) {
+      console.log('Failed to load Runtime.js');
+    });
+    $.getScript('/joinskymiles/' + json[version] + '/main.js', function () {
+      // do something here
+    }).fail(function (jqxhr, settings, exception) {
+      console.log('Failed to load main.js');
+    });
+    $.getScript('/joinskymiles/' + json[version] + '/polyfills.js', function () {
+      // do something here
+    }).fail(function (jqxhr, settings, exception) {
+      console.log('Failed to load polyfills.js');
+    });
+    $('head').append('<link>');
+
+    const css = $('head').children(':last');
+    css.attr({
+      rel: 'stylesheet',
+      type: 'text/css',
+      href: '/joinskymiles/' + json[version] + '/styles.css',
+    });
+    $("<idp-root/>").appendTo('body')
+  }
+
+  /**
+   *
+   * @param {*} json
+   */
+  function determineVersionToLoad(json) {
+    console.log(json['contentDetails']['parsys']['router']['endpoint']);
+    const version = json['contentDetails']['parsys']['router']['endpoint'];
+    $.getJSON(configrequri, function (json) {
+      loadScripts(json, version);
+    });
+  }
+
+  /**
+   *
+   * @param {*} url
+   * @param {*} callback
+   */
+  function requestPersonalizationJSON(url, callback) {
+    $.ajax({
+      type: 'POST',
+      url: url,
+      headers: { 'Content-Type': 'application/json' },
+      data:
+        '{"userdata":{},"requestparam":{"campaignId":' +
+        '"flowrouter:skymiles-enrollment","format":"json"}}',
+      complete: function (xhr) {
+        callback.call(null, xhr.responseJSON);
+      },
+    });
+  }
+});

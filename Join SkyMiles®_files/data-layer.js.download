@@ -1,0 +1,18 @@
+window.idp = {
+  dataLayer: {
+    digitalData: {
+      attributes: {
+        cardBanner: {
+          applicationStatus: '',
+          cardType: '',
+          offerId: '',
+        },
+      },
+      page: {
+        pageInfo: {
+          pageID: '',
+        },
+      },
+    },
+  },
+};

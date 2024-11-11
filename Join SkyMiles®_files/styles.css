@@ -1,0 +1,15 @@
+body {
+    margin:0 !important;
+}
+.skymiles-enrollment-holder {
+    margin-top: 4.8rem;
+  }
+
+@media (max-width: 992px) {
+    .skymiles-enrollment-holder {
+      margin-top: 2.8rem;
+    }
+    .logo-container {
+     margin-top:-21px;
+	  }
+}
